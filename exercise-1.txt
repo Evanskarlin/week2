@@ -1,0 +1,101 @@
+soal 1:
+    -algoritma-
+    1. Tampung nilai 600 di variable 'M'
+    2. Tampung nilai 2 di variable 'A'
+    3. Kali variable 'A' dan 'B'
+    4. Tampung hasil perkalian tersebut di 'F'
+    5. Tampilkan niai 'F'
+
+    -pseudocode-
+    STORE 'M' with 600
+    STORE 'A' with 2
+    STORE 'F' without any value
+    SET 'F' with 'M' times 'A'
+    Display 'F'
+
+soal 2:
+    -algoritma-
+    1. Tampung nilai number berapapun di variable 'Tahun'
+    2. Tampung nilai 4 di variable 'A'
+    3. Tampung nilai 100 di variable 'B'
+    4. Tampung nilai 400 di variable 'C'
+    5. Tampung nilai kosong di variable 'Kabisat'
+    6. Apabila 'Tahun' habis dibagi 4 dan 'Tahun' tidak habis dibagi 100 maka atur nilai 'Kabisat' dengan nilai true. bila tidak atur nilai 'Kabisat' dengan nilai false
+    7. Apabila 'Tahun' habis dibagi 4 dan 'Tahun' habis dibagi 100 dan 'Tahun' habis dibagi 400 maka atur nilai 'Kabisat' dengan nilai true. bila tidak atur nilai 'Kabisat' dengan nilai false
+    8. Tampilkan nilai 'kabisat'
+
+
+    -pseudocode-
+    STORE 'Tahun' with any number value
+    STORE 'A' with 4
+    STORE 'B' with 100
+    STORE 'C' with 400
+    STORE 'Kabisat' without any value
+    IF 'Tahun' modulus 'A' EQUALS TO 0 AND 'Tahun' modulus 'B' EQUALS TO 1 THEN
+        SET 'Kabisat' with true
+    ELSE IF 'Tahun' modulus 'A' EQUALS TO 0 AND 'Tahun' modulus 'B' EQUALS TO 0 AND 'Tahun' modulus 'C' EQUALS TO 0 THEN
+        SET 'Kabisat' with true
+    ELSE
+        SET 'Kabisat' with false
+    END IF
+    Display 'Kabisat'
+
+soal 3:
+    -algoritma-
+    1. Tampung nilai 0 di variable 'Pakaian'
+    2. Tampung nilai 20 di variable 'A'
+    3. Tampung nilai false variable 'NyalakanMesin'
+    4. Apabila 'Pakaian' lebih kecil dari 'A' maka lanjut ke step 5. bila tidak atur nilai 'NyalakanMesin' dengan nilai true kemudian lanjut ke step 7
+    5. Tambahkan 'Pakaian' dengan nilai 1.
+    6. Tampilkan nilai 'Pakaian' kemudian kembali ke step 4
+    7. Tampilkan nilai 'NyalakanMesin'
+
+    -pseudocode-
+    STORE 'Pakaian' with 0
+    STORE 'A' with 20
+    STORE 'NyalakanMesin' without false
+    WHILE('Pakaian'<'A')
+        CALCULATE 'Pakaian' plus 1
+        Display 'Pakaian'
+    END WHILE
+    SET 'NyalakanMesin' with true
+    Display 'NyalakanMesin'
+
+soal 4:
+    -algoritma-
+    1. Tampung nilai 40 di variable 'A'
+    2. Tampung nilai 0 di variable 'Siswa'
+    3. Tampung nilai kosong pada 'KukuPanjang'
+    4. Tampung nilai kosong pada 'Hukum'
+    5. Tampung nilai kosong pada 'Memuji'
+    6. Apabila 'siswa' lebih kecil dari 'A' maka lanjut ke step 7. bila tidak lanjut ke step 13
+    7. Tambahkan 'siswa' dengan nilai 1
+    8. Atur 'KukuPanjang' dengan apapun nilai bolean
+    9. Apabila 'KukuPanjang' bernilai true maka lanjut ke step 10. bila tidak lanjut ke step 11
+    10. Atur 'Hukum' dengan nilai true. Atur 'Memuji' dengan nilai false kemudian lanjut ke step 12
+    11. Atur 'Hukum' dengan nilai false. Atur 'Memuji' dengan nilai true 
+    12. Tampilkan 'siswa'. Tampilkan 'Hukum'. Tampilkan 'Memuji' kemudian lanjut ke step 6
+    13. tampilkan selesai
+
+
+    -pseudocode-
+    STORE 'A' with 40
+    STORE 'Siswa' with 0
+    STORE 'KukuPanjang' without any value
+    STORE 'Hukum' without any value
+    STORE 'Memuji' without any value
+    WHILE('siswa'<'A')
+        CALCULATE 'siswa' plus 1
+        SET 'KukuPanjang' with any bolean value
+        IF 'KukuPanjang' EQUALS TO true
+            SET 'Hukum' with true
+            SET 'Memuji' with false
+        ELSE
+            SET 'Hukum' with false
+            SET 'Memuji' with true
+        END IF
+        Display 'siswa'
+        Display 'Hukum'
+        Display 'Memuji'
+    END WHILE
+    Display selesai

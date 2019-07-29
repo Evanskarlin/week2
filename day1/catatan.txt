@@ -1,0 +1,71 @@
+/*
+  Algoritma = kumpulan dari step untuk mencapai suatu tujuan. biasanya ditampilkan dengan urutan number
+  A = 3, B = 3, C ?
+  1. Tampung nilai 3 di variable A
+  2. Tampung nilai 3 di variable B
+  3. Jumlah variable A dan B
+  4. Tampung hasil penjumlahan tersebut di C
+  5. Tampilkan C
+
+  Pseudocode = peralihan algortima dan bahasa coding
+  Notes: tidak boleh ada operasi matematika, ada indentasinya, tidak boleh declare 2 kali
+  STORE 'A' with 3
+  STORE 'B' with 3
+  STORE 'C' with any value
+  SET 'C' with 'A' plus 'B'
+  DISPLAY 'C'
+
+  IF 'A' EQUALS TO 'B' AND 'B' EQUALS TO 'C' AND  THEN
+    DISPLAY 'apa'
+  END IF
+
+  IF 'C' MOD 3 EQUALS TO 0 THEN
+
+  END IF
+
+  Jenis tipe data ada dua macam yaitu primitif dan structured(nanti)
+
+  Tipe Data primitif: string, boolean, number (bisa *semua operasi matematika), null, undefined
+
+  Operasi Number ada apa aja:
+  + => menjumlahkan (bisa bisa buat string juga)
+  - => mengurangi
+  * => mengalikan
+  / => membagi
+  % => modulus, untuk mencari sisa bagi
+  **n => pangkat-n
+  Math.cobacarisendiri() => untuk operasi yang lain
+
+  KONDISIONAL
+  && AND => artinya 2 2 nya harus terpenuhi
+  || OR => artinya salah satu yang harus terpenuhi
+  === => tipe datanya harus sama dan nilainya sama
+  == => tipe datanya bisa beda tapi nilainya sama
+
+
+  Algoritma datang ke hacktiv8
+  1. Bangun tidur
+  2. Berdoa dulu
+  3. Peregangan
+  4. Mandi
+  5. Menentukkan opsi ke hacktiv8, apabila berjalan kaki adalah opsinya maka
+     lanjut ke step 6. bila tidak lanjut ke step 7.
+  6. Jalan ke hacktiv8, lanjut ke step 9
+  7. Apabila opsi yang dipilih adalah naik motor, maka lanjut ke step 8
+  8. Berkendara ke hackti8, lanjut ke step 9
+  9. Tiba di hacktiv8
+
+  PSEUDOCODE datang ke hacktiv8
+  STORE 'bangunTidur' with true
+  STORE 'berdoaDulu' with true
+  STORE 'peregangan' with true
+  STORE 'mandi' with true
+  STORE 'opsi' with preferrable values between 'jalan kaki' or 'naik motor'
+  IF 'opsi' EQUALS TO 'jalan kaki' THEN
+    STORE 'jalanKakiToHacktiv8' with true
+    STORE 'tibaDiHacktiv8' with true
+  ELSE IF 'opsi' EQUALS TO 'naik motor' THEN
+    STORE 'berkendaraToHacktiv8' with true
+    STORE 'tibaDiHacktiv8' with true
+  END IF
+*/
