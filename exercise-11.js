@@ -2,7 +2,7 @@ var balik = '';
 
 function balikKata(kata) {
     balik = '';
-    for (var A = kata.length-1; A>0 ; A--){
+    for (var A = kata.length-1; A>=0 ; A--){
         balik = balik + kata[A];
     }
     return balik;
