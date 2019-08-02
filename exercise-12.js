@@ -1,18 +1,13 @@
 var jam = 0;
 var menit = 0;
-var tambahannol = '';
 
 function konversiMenit(menit) {
-    jam = menit/60;
+    jam = Math.floor(menit/60);
     menit = menit%60;
-    tambahannol = menit.toString()
-    if (tambahannol.length < 2){
-        tambahannol = "0";
+    if (menit < 10){
+        menit = "0" + menit;
     }
-    else{
-        tambahannol = '';
-    }
-    return jam.toFixed() + ":" + tambahannol + menit;
+    return jam + ":" + menit;
 }
 
 console.log(konversiMenit(63)); // 1:03
