@@ -1,0 +1,65 @@
+/*
+    LOOPING
+    Tipe Data ada 2 macam:
+    - Primitif String, Boolean, Number, null, undefined
+    - Structured Array dan Object (phase 0)
+
+    Untuk membuat string boleh pake ' atau ", yang penting konsisten
+    string '1 2 3 4 5'
+    index   0 1 2 3 4
+    
+    EXAMPLE:
+    var string = '12345';
+
+    console.log(string[0]); // '1'
+    console.log(string[3]); // '4'
+    console.log(string[1]); // '2'
+    console.log(string[2] + string[0]); // '31'
+    console.log(string[string.length - 1]); // mengambil index terakhir
+
+    Inti dari looping ada 3:
+    1. Diinisialisasi = kita butuh checker untuk dibandingkan terhadap limit
+    2. Limit = batas kita melakukan sesuatu
+    3. Expression = kegiatan yang terjadi selama looping
+
+    // menghitung jumlah kendaraan dari 0 sampe 100
+    Algoritma Looping
+    1. buat catatan dimulai dari 0 untuk mencatat jumlah kendaraan yang lewat.
+    2. selama mobil yang lewat belum sampe 100, maka lanjut ke step 3. bila tidak lanjut ke step-4.
+    3. tambahkan catatan mobil sebanyak 1 setiap ada mobil yang lewat. kembail ke step-3.
+    4. menghitung mobil selesai.
+
+    Pseudocode Looping
+    STORE counter with 0
+    WHILE counter less than 100 THEN
+        SET counter with counter plus 1
+    END WHILE
+    DISPLAY 'hitung mobil selesai'
+
+
+    // bentukan codingnya
+    // membuat aplikasi push up
+    // pertama kita harus initialization
+    var countPushUp = 1
+    // kita buat limit
+    while (countPushUp <= 20) {
+        console.log('saya sudah push-up sebanyak ' + countPushUp)
+        countPushUp += 1
+    }
+    console.log('saya sudah lelah')
+
+    contoh koding untuk cek kuku:
+    var siswa = 0;
+    while (siswa < 40) {
+        var randomKuku = Math.floor(Math.random() * 2);
+        if (randomKuku === 2) {
+            randomKuku = 1;
+        }
+        if (randomKuku === 1) {
+            console.log('hukum murid ke ' + (siswa + 1));
+        } else if (randomKuku === 0) {
+            console.log('puji murid ke ' + (siswa + 1));
+        }
+        siswa++;
+    }
+*/

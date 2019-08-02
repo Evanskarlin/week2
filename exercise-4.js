@@ -1,113 +1,62 @@
 var tanggal = 31;
 var bulan = 12;
-var tahun = 2200;
+var tahun = 2201;
+var display = '';
 
 if (tanggal>0 && tanggal<32){
-    switch(bulan){
-        case 1:
-            if (tahun>1899 && tahun<2201){
-                console.log(tanggal + " Januari " + tahun);
-            }
-            else{
-                console.log("Tahun salah");
-            }
-            break;
-        case 2:
-            if (tahun>1899 && tahun<2201){
-                console.log(tanggal + " Februari " + tahun);
-            }
-            else{
-                console.log("Tahun salah");
-            }
-            break;
-        case 3:
-            if (tahun>1899 && tahun<2201){
-                console.log(tanggal + " Maret " + tahun);
-            }
-            else{
-                console.log("Tahun salah");
-            }
-            break;
-        case 4:
-            if (tahun>1899 && tahun<2201){
-                console.log(tanggal + " April " + tahun);
-            }
-            else{
-                console.log("Tahun salah");
-            }
-            break;
-        case 5:
-            if (tahun>1899 && tahun<2201){
-                console.log(tanggal + " Mei " + tahun);
-            }
-            else{
-                console.log("Tahun salah");
-            }
-            break;
-        case 6:
-            if (tahun>1899 && tahun<2201){
-                console.log(tanggal + " Juni " + tahun);
-            }
-            else{
-                console.log("Tahun salah");
-            }
-            break;
-        case 7:
-            if (tahun>1899 && tahun<2201){
-                console.log(tanggal + " Juli " + tahun);
-            }
-            else{
-                console.log("Tahun salah");
-            }
-            break;
-        case 8:
-            if (tahun>1899 && tahun<2201){
-                console.log(tanggal + " Agustus " + tahun);
-            }
-            else{
-                console.log("Tahun salah");
-            }
-            break;
-        case 9:
-            if (tahun>1899 && tahun<2201){
-                console.log(tanggal + " September " + tahun);
-            }
-            else{
-                console.log("Tahun salah");
-            }
-            break;
-        case 10:
-            if (tahun>1899 && tahun<2201){
-                console.log(tanggal + " Oktober " + tahun);
-            }
-            else{
-                console.log("Tahun salah");
-            }
-            break;
-        case 11:
-            if (tahun>1899 && tahun<2201){
-                console.log(tanggal + " November " + tahun);
-            }
-            else{
-                console.log("Tahun salah");
-            }
-            break;
-        case 12:
-            if (tahun>1899 && tahun<2201){
-                console.log(tanggal + " Desember " + tahun);
-            }
-            else{
-                console.log("Tahun salah");
-            }
-            break;
-        default:
-            console.log("Bulan salah")            
-            break; 
-    }
+    display = display + tanggal + " ";
 }
 else{
-    console.log("Tanggal salah");
+    display = display + "//tanggal salah// ";
 }
 
+switch(bulan){
+    case 1:
+        display = display + "Januari ";
+        break;
+    case 2:
+        display = display + "Februari ";   
+        break;
+    case 3:
+        display = display + "Maret ";
+        break;
+    case 4:
+        display = display + "April ";
+        break;
+    case 5:
+        display = display + "Mei ";
+        break;
+    case 6:
+        display = display + "Juni ";
+        break;
+    case 7:
+        display = display + "Juli ";
+        break;
+    case 8:
+        display = display + "Agustus ";
+        break;
+    case 9:
+        display = display + "September ";
+        break;
+    case 10:
+        display = display + "Oktober ";
+        break;
+    case 11:
+        display = display + "November ";
+        break;
+    case 12:
+        display = display + "Desember ";
+        break;
+    default:
+        display = display + "//bulan salah// ";         
+        break;
+}
 
+if (tahun>1899 && tahun<2201){
+    display = display + tahun;
+}
+else{
+    display = display + "//tahun salah// ";
+}
 
+console.log(display);

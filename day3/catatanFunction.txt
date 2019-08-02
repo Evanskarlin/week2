@@ -1,0 +1,31 @@
+/*
+    FUNCTION terdiri dari apa aja komponennya:
+    - Input/paramater (optional), bila dibutuhkan di proses maka menjadi required
+    - Process (required)
+    - Output (optional), bila ingin menampilkan atau dibutuhkan di luar function maka menjadi required
+
+    Notes: Function akan dijalankan sebelum semua proses dijalankan, tapi sebaiknya diletakkan di paling atas
+
+    function namaFunction(parameter_bilaperlu) {
+        // proses
+        // return bila perlu
+    }
+
+    // membuat function
+    function goToHacktiv8(kendaraan, waktuBangun, durasiPerjalanan) {
+        // proses ada 2 yaitu berangkat dan sampai
+        var sampai = waktuBangun + durasiPerjalanan;
+        var result = '';
+        result = 'saya berangkat menggunakan ' + kendaraan;
+        result += '\n';
+        result += 'saya sampai pukul ' + sampai;
+        // console.log('saya berangkat menggunakan ' + kendaraan);
+        // console.log('saya sampai pukul ' + sampai);
+        return result;
+    }
+
+    // memanggil functionnya
+    console.log(goToHacktiv8('car', 9, 2));
+    console.log(goToHacktiv8('motor', 10, 1));
+    console.log(goToHacktiv8('by foot', 7, 4));
+*/
